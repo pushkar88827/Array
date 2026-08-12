@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> v = {-5, 10, -2, 8, 0, -7, 15};
+
+    int positive = 0, negative = 0, zero = 0;
+
+    for(int x : v) {
+        if(x > 0)
+            positive++;
+        else if(x < 0)
+            negative++;
+        else
+            zero++;
+    }
+
+    cout << "Positive: " << positive << endl;
+    cout << "Negative: " << negative << endl;
+    cout << "Zero: " << zero << endl;
+
+    return 0;
+}
