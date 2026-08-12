@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void summ(vector<int> v) {
+    int sum=0;
+    for(int x : v) {
+        sum=sum+x;
+    }
+    cout<<sum;
+}
+
+int main() {
+    vector<int> v = {10, 20, 30, 40, 50};
+
+    summ(v);
+
+    return 0;
+}
