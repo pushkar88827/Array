@@ -1,0 +1,26 @@
+
+
+#include <iostream>
+#include <vector> 
+using namespace std;
+
+
+int main()
+{
+    int sum=0;
+    int average;
+    vector<int> v={12,14,23,52,43};
+    int n;
+    n=v.size();
+    cout<<"size of vector is: "<<n<<endl;
+    
+    for(int x : v){
+        sum=sum+x;
+    }
+    cout<<"Sum of vector is: "<<sum<<endl;
+    average=sum/n;
+    cout<<"average is: "<<average;
+    
+   
+    return 0;
+}
