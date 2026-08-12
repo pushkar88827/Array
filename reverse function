@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void print(vector<int>& arr) {
+    for(int x : arr) {
+        cout << x << " ";
+    }
+}
+
+int main() {
+    vector<int> arr = {12, 42, 45, 28, 89};
+
+    int i = 0, j = arr.size() - 1;
+
+    while(i < j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+
+        i++;
+        j--;
+    }
+
+    print(arr);
+
+    return 0;
+}
