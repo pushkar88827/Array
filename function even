@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void even(vector<int> v) {
+    for(int x : v) {
+        if(x%2==0){
+        cout<<x<<" ";
+    }}
+   
+}
+
+int main() {
+    vector<int> v = {19, 20, 37, 40, 50};
+
+    even(v);
+
+    return 0;
+}
