@@ -1,0 +1,26 @@
+
+//second largest element
+#include <iostream>
+#include <vector> 
+using namespace std;
+
+
+int main()
+{
+  
+    vector<int> v = {586,621,979,45,967,789};
+    int max = 0;
+    int n=v.size();
+    for(int x : v){
+       if(x>max)
+       max=x;
+       
+    }
+    cout<<max<<" ";
+    cout<<endl;
+    cout<<n;
+    
+    
+   
+    return 0;
+}
