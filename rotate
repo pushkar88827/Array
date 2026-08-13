@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void reverse(vector<int>& array,int start,
+    int end){
+    
+    while(start<end){
+        swap(array[start],array[end]);
+        start++;
+        end--;
+    }
+}
+
+void rotate(vector<int>& array,int k){
+    int n=array.size();
+    k=k % n;
+
+    reverse(array,0,n-1);  
+    
+    reverse(array,0,k-1);
+
+    reverse(array,k,n-1);
+    
+}
+
+   
+int main() {
+    vector<int> array = {23,25,27,29,31,33};
+
+    rotate(array,3);
+    for (int x : array) {
+        cout << x << " ";
+    }
+    return 0;
+}
